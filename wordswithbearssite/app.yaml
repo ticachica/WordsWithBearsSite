@@ -1,0 +1,22 @@
+application: wordswithbearssite
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /stylesheets
+  static_dir: static/stylesheets
+
+- url: /javascripts
+  static_dir: static/javascripts
+
+- url: /images
+  static_dir: static/images
+
+- url: /.*
+  script: wordswithbearssite.app
+  
+libraries:
+- name: jinja2
+  version: "2.6"
