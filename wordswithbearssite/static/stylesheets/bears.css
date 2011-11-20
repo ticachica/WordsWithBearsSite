@@ -1,0 +1,117 @@
+/*bad reset, but just need something quick
+********************************************************************************/
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+ul, ol {
+	list-style-type: none;
+}
+body {
+	padding-top: 60px;
+	background-color: #f7f4fb;
+}
+
+/*Email signup
+********************************************************************************/
+#content {
+	margin: 0 auto;
+	width: 960px;
+}
+#splash {
+	margin: 0 auto;
+	text-align: center;
+}
+	input[type="text"] {
+		background-color: #fdfcfd;
+		border: 1px solid #deddea;
+		color: #b2b2b2;
+		font: 14px/14px 'Lato', arial, serif;
+		font-style: italic;
+		margin: 0 0 0 10px;
+		padding: 7px;
+		width: 250px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	}
+	input:focus {
+		color: #414141;
+		font-style: normal;
+		background-color: #fff;
+		border: 1px solid #b0aecf;
+		-webkit-box-shadow: 0px 0px 8px rgba(146,143,193,0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(146,143,193,0.3);
+		box-shadow: 0px 0px 8px rgba(146,143,193,0.3);
+	}
+	input[type="submit"] {
+		background: #99ca28;
+		background: -webkit-gradient(linear, left top, left bottom, from(#cae285), to(#a7d162));
+		background: -moz-linear-gradient(top,  #cae285,  #a7d162);
+		border: 1px solid #adc671;
+		color: #5d7731;
+		cursor: pointer;
+		font-family: 'Lato', helvetica, sans-serif;
+		font-size: 15px;
+		margin: 0 10px 0 0;
+		padding: 6px 10px 7px;
+		text-align: center;
+		text-decoration: none;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
+		text-transform: uppercase;
+	}
+	input[type="submit"]:hover {
+		border: 1px solid #98be59;
+		color: #3e5b10;
+	}
+
+/* ********************************************************************************/
+
+body {
+	background-image: url('../images/background.png');
+	background-repeat: repeat;
+	background-position: center;
+	background-width: 100%;
+	background-height: 100%;
+	background-color: white;
+	font-family: Helvetica;
+	font-size: 18px;
+}
+
+.center_header {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center_footer {
+    color: white;
+	width: 848px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center {
+	width: 848px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.block { 
+	background-image: url('../images/bottom-bg.png');
+}
+
+.text {
+	font-weight: bold;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
