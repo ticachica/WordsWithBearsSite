@@ -12,6 +12,12 @@ class MainPage(webapp2.RequestHandler):
     template_values = {}
     self.response.out.write(template.render(template_values))
 
+class Thanks(webapp2.RequestHandler):
+  def get(self):
+    template = jinja_environment.get_template('templates/thanks.html')
+    template_values = {}
+    self.response.out.write(template.render(template_values))
+
 class Guestbook(webapp2.RequestHandler):
     def post(self):
         self.response.out.write('<html><body>You wrote:<pre>')
@@ -21,8 +27,10 @@ class Guestbook(webapp2.RequestHandler):
         new_signup.email = self.request.get('email')
         new_signup.language = self.request.get('language')
         new_signup.put()
+        self.redirect('/thanks')
 
 
 app = webapp2.WSGIApplication([('/', MainPage),
-                                ('/sign', Guestbook)],
+                                ('/sign', Guestbook),
+                                ('/thanks', Thanks)],
                               debug=True)
