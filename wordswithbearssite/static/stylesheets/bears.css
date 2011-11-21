@@ -77,8 +77,21 @@ body {
 	background-width: 100%;
 	background-height: 100%;
 	background-color: white;
-	font-family: Helvetica;
+	font-family: Courier;
 	font-size: 18px;
+}
+
+ul.square {list-style-type:square}
+
+h1 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .center_header {
