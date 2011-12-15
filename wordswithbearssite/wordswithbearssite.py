@@ -27,7 +27,7 @@ class Guestbook(webapp2.RequestHandler):
     new_signup.email = self.request.get('email')
     new_signup.language = self.request.get('language')
     new_signup.put()
-    #self.redirect('/thanks')
+    self.redirect('/thanks')
 
 class InterestedPeople(webapp2.RequestHandler):
   def get(self):
